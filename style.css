@@ -1,0 +1,175 @@
+:root {
+  --text-color: #ffffff;
+  --stroke-color: #ffffff80;
+  --surface-color: #ffffff1a;
+  --surface-color-hover: #ffffff0d;
+  --highlight-color: #ffffff33;
+  --bg-url: url('./assets/bg-mobile.jpg');
+  --bg-switch-button-theme: url('./assets/sun.svg');
+  --toggle-handle-color: #fff;
+}
+
+.light {
+  --text-color: #000000;
+  --stroke-color: #00000080;
+  --surface-color: #0000000d;
+  --surface-color-hover: #00000005;
+  --highlight-color: #0000001a;
+  --bg-url: url('./assets/bg-mobile-light.jpg');
+  --bg-switch-button-theme: url('./assets/moon-stars.svg');
+  --toggle-handle-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto 0;
+  padding: 0 24px;
+}
+
+/* profile */
+#profile {
+  text-align: center;
+  padding: 24px;
+  /* display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center; */
+}
+
+/* Elemento do tipo inline pode ser alinhados pelo seu elemento pai usando 
+   a text-align: center
+   */
+
+#profile img {
+  /* display: block; */
+  /* margin: auto; */
+  width: 112px;
+  margin-bottom: 8px;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  /* 150% */
+}
+
+/* links - lista */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  border-radius: 8px;
+  border: 1px solid var(--stroke-color);
+  background-color: var(--surface-color);
+
+  backdrop-filter: blur(4px);
+
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+ul li a:hover {
+  background-color: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+  /* font-size: 1.5rem; */
+}
+
+/* Switch */
+#switch {
+  position: relative;
+  width: 4rem;
+
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 2rem;
+  height: 2rem;
+  background: var(--toggle-handle-color) var(--bg-switch-button-theme) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 4rem;
+  height: 1.5rem;
+  background: var(--surface-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid var(--stroke-color);
+  border-radius: 9999px;
+}
+
+/* social links */
+.social-links {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px 0;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+
+  transition: background 0.2s;
+}
+
+.social-links a:hover {
+  background-color: var(--highlight-color);
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+}
