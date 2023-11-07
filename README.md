@@ -18,14 +18,6 @@ Aplicação para exibir os links da rede social de alguma pessoa publica ou priv
   <img alt="modo light do projeto" src="./githubassets/theme_light.png" width="300px" > 
 </p>
 
-- Modo Dark
-
-  ![modo dark do projeto](./githubassets/theme_dark.png)
-
-- Modo Light
-
-  ![modo light do projeto](./githubassets/theme_light.png)
-
 ### Desktop
 
 ![alt](https://)
