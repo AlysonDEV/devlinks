@@ -43,7 +43,7 @@ Aplicação para exibir os links da rede social de alguma pessoa publica ou priv
 
 [projeto do fimga](https://www.figma.com/community/file/1187422022288947321/devlinks-projeto-discover)
 
-## :memo: 📝  Licença
+## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
