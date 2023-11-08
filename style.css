@@ -36,7 +36,10 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  /* quando a largura for menor que 588 ele vai deixar 100% da largura */
+  max-width: 588px;
+  /* limita a largura da aplicação até as 588px */
   margin: 56px auto 0;
   padding: 0 24px;
 }
