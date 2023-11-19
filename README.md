@@ -35,9 +35,6 @@ Aplicação para exibir os links da rede social de alguma pessoa publica ou priv
   <img alt="modo light do projeto" src="./.github/theme_light.png" width="300px" > 
 </p>
 
-### Desktop
-
-![alt](https://)
 
 ### figma
 
